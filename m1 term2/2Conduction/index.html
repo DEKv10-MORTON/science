@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciMaster - การถ่ายโอนความร้อน ม.1 เทอม 2</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+        </div>
+        <div class="brand-text">
+          <h2>SciMaster: การถ่ายโอนความร้อน By : DEK MORTON STUDIO</h2>
+          <p>คลังความรู้และข้อสอบ • หน่วยที่ 5 บทที่ 2 การถ่ายโอนความร้อน</p>
+        </div>
+      </div>
+
+      <!-- ส่วนขวา: Stats bar และปุ่ม YouTube ติวเตอร์ -->
+      <div class="header-right-group">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-icon">⭐</span>
+            <div class="stat-info">
+              <span class="stat-label">Score</span>
+              <span class="stat-value" id="score-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🔥</span>
+            <div class="stat-info">
+              <span class="stat-label">Streak</span>
+              <span class="stat-value" id="streak-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🏆</span>
+            <div class="stat-info">
+              <span class="stat-label">Progress</span>
+              <span class="stat-value" id="progress-val">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Glow Button -->
+        <a href="https://www.youtube.com/watch?v=evpbI1jU0q8" target="_blank" class="yt-pulse-btn"
+          title="คลิปติวเตอร์ YouTube เพิ่มเติม">
+          <i class="fa-brands fa-youtube"></i>
+          <span>ติวเตอร์</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <div class="main-wrapper">
+    <nav class="tabs-nav sci-tabs">
+      <button class="tab-btn active" onclick="switchTab('tab-theory', this)">
+        <i class="fa-solid fa-book-open"></i> 1. สรุปการถ่ายโอนความร้อน
+      </button>
+      <button class="tab-btn" onclick="switchTab('tab-drill', this)">
+        <i class="fa-solid fa-bolt"></i> 2. Heat Transfer Drill
+      </button>
+    </nav>
+
+    <!-- Tab 1: Theory Summary -->
+    <div id="tab-theory" class="tab-content active">
+      <div class="banner-card sci-banner">
+        <span class="badge-pill sci-badge">Unit 5 Chapter 2: Heat Transfer</span>
+        <h1>สรุปสาระสำคัญ บทที่ 2 การถ่ายโอนความร้อน (Conduction, Convection & Radiation)</h1>
+        <p>เจาะลึก 3 รูปแบบการถ่ายโอนความร้อน, สมดุลความร้อน, และการประยุกต์ใช้ในชีวิตประจำวัน!</p>
+      </div>
+
+      <div class="theory-grid">
+        <!-- Card 1 -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-arrows-split-up-and-left text-science"></i> 3
+              รูปแบบการถ่ายโอนความร้อน</h3>
+            <span class="tag sci-tag">Transfer Methods</span>
+          </div>
+          <p class="theory-desc">การนำความร้อน, การพาความร้อน, และการแผ่รังสีความร้อน</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Concepts</div>
+            <div>• <b>การนำความร้อน (Conduction):</b> ผ่านตัวกลางของแข็ง จากที่ร้อนไปเย็น โมเลกุลไม่เคลื่อนที่</div>
+            <div>• <b>การพาความร้อน (Convection):</b> ผ่านของเหลวหรือแก๊ส อาศัยการเคลื่อนที่ของตัวกลาง</div>
+            <div>• <b>การแผ่รังสี (Radiation):</b> ผ่านคลื่นแม่เหล็กไฟฟ้า ไม่ต้องอาศัยตัวกลาง</div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-scale-balanced text-science"></i>
+              สมดุลความร้อนและการใช้ประโยชน์</h3>
+            <span class="tag sci-tag">Thermal Equilibrium</span>
+          </div>
+          <p class="theory-desc">กฎการถ่ายโอนความร้อนจนอุณหภูมิเท่ากันและการประยุกต์ใช้งาน</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Formulas & Rules</div>
+            <div>• <b>สมดุลความร้อน:</b> ความร้อนที่สสารได้รับ = ความร้อนที่สสารสูญเสีย (Q_gain = Q_lost)</div>
+            <div>• อุณหภูมิผสมจะอยู่กึ่งกลางระหว่างอุณหภูมิเดิมของสารทั้งสอง</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Drill -->
+    <div id="tab-drill" class="tab-content">
+      <div class="quiz-card">
+        <div class="quiz-meta">
+          <span class="topic-indicator sci-indicator" id="transfer-category-badge"><i
+              class="fa-solid fa-layer-group"></i> คลังข้อสอบการถ่ายโอนความร้อน</span>
+          <span class="generator-tag sci-gen-tag"><i class="fa-solid fa-infinity"></i> Infinite Random Queue</span>
+        </div>
+
+        <div class="question-box">
+          <h3 class="question-title" id="transfer-q-text">กำลังโหลดโจทย์...</h3>
+          <div class="question-hint" id="transfer-q-hint">คำชี้แนะบริบทจะปรากฏตรงนี้</div>
+        </div>
+
+        <div class="options-grid" id="transfer-options-container"></div>
+
+        <div class="feedback-box hidden" id="transfer-feedback">
+          <div class="feedback-header" id="transfer-fb-title"></div>
+          <div class="feedback-text" id="transfer-fb-desc"></div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn-action sci-btn hidden" id="transfer-next-btn" onclick="generateTransferQuestion()">
+            ข้อถัดไป <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

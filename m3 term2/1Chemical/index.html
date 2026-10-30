@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciMaster ม.3 เทอม 2 - Unit 4: ปฏิกิริยาเคมีและวัสดุ</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-flask-vial"></i>
+        </div>
+        <div class="brand-text">
+          <h2>SciMaster ม.3 เทอม 2 By : DEK MORTON STUDIO</h2>
+          <p>หน่วยที่ 4 • ปฏิกิริยาเคมีและวัสดุในชีวิตประจำวัน</p>
+        </div>
+      </div>
+
+      <!-- ส่วนขวา: Stats bar และปุ่ม YouTube วูบวาบเชิญชวน -->
+      <div class="header-right-group">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-icon">⭐</span>
+            <div class="stat-info">
+              <span class="stat-label">Score</span>
+              <span class="stat-value" id="score-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🔥</span>
+            <div class="stat-info">
+              <span class="stat-label">Streak</span>
+              <span class="stat-value" id="streak-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🏆</span>
+            <div class="stat-info">
+              <span class="stat-label">Progress</span>
+              <span class="stat-value" id="progress-val">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Glow Button -->
+        <a href="https://www.youtube.com/watch?v=y4e02W9rYmo" target="_blank" class="yt-pulse-btn"
+          title="คลิปติวเตอร์ YouTube เพิ่มเติม">
+          <i class="fa-brands fa-youtube"></i>
+          <span>ติวเตอร์</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <div class="main-wrapper">
+    <nav class="tabs-nav sci-tabs">
+      <button class="tab-btn active" onclick="switchTab('tab-theory', this)">
+        <i class="fa-solid fa-book-open"></i> 1. ทฤษฎีปฏิกิริยาเคมี
+      </button>
+      <button class="tab-btn" onclick="switchTab('tab-drill', this)">
+        <i class="fa-solid fa-bolt"></i> 2. Chemistry Drill
+      </button>
+    </nav>
+
+    <!-- Tab 1: Theory -->
+    <div id="tab-theory" class="tab-content active">
+      <div class="banner-card sci-banner">
+        <span class="badge-pill sci-badge">วิทยาศาสตร์ ม.3 เทอม 2</span>
+        <h1>ปฏิกิริยาเคมีและวัสดุในชีวิตประจำวัน (Chemical Reactions & Materials)</h1>
+        <p>ศึกษาการเปลี่ยนแปลงทางเคมี สารตั้งต้นและผลิตภัณฑ์ กฎทรงมวล ปฏิกิริยาดูด/คายความร้อน
+          และประเภทของพอลิเมอร์ในชีวิตประจำวัน!</p>
+      </div>
+
+      <div class="theory-grid">
+        <!-- Chemical Reactions & Heat -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-fire text-science"></i> ปฏิกิริยาเคมีและการเปลี่ยนแปลงความร้อน
+            </h3>
+            <span class="tag sci-tag">Reactions & Energy</span>
+          </div>
+          <p class="theory-desc">สารใหม่ที่เกิดขึ้น การจัดเรียงตัวของอะตอม และพลังงานความร้อนรอบตัว</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Concepts</div>
+            <div>• <b>กฎทรงมวล:</b> มวลรวมของสารตั้งต้นก่อนเกิดปฏิกิริยาเท่ากับมวลรวมของผลิตภัณฑ์หลังเกิดปฏิกิริยาเสมอ
+            </div>
+            <div>• <b>ปฏิกิริยาคายความร้อน:</b> สารทำปฏิกิริยาแล้วแผ่ความร้อนออกสู่สิ่งแวดล้อม (อุณหภูมิรอบข้างสูงขึ้น
+              เช่น การเผาไหม้)</div>
+            <div>• <b>ปฏิกิริยาดูดความร้อน:</b> สารดูดกลืนความร้อนจากสิ่งแวดล้อมเข้ามา (อุณหภูมิลดลง เช่น
+              การละลายของแอมโมเนียมไนเตรต)</div>
+          </div>
+        </div>
+
+        <!-- Acids, Bases & Polymers -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-flask text-science"></i> กรด-เบส และพอลิเมอร์</h3>
+            <span class="tag sci-tag">Acids, Bases & Polymers</span>
+          </div>
+          <p class="theory-desc">ค่า pH สารละลายอิเล็กโทรไลต์ และสมบัติของพอลิเมอร์ พลาสติก เส้นใย ยาง</p>
+          <div class="formula-box">
+            <div class="formula-title">Materials & pH</div>
+            <div>• <b>ค่า pH:</b> กรด (pH < 7), กลาง (pH=7), เบส (pH> 7)</div>
+            <div>• <b>เทอร์โมพลาสติก:</b> หลอมเหลวและขึ้นรูปใหม่ได้เมื่อได้รับความร้อน (เช่น พลาสติก PE, PVC)</div>
+            <div>• <b>พลาสติกเทอร์โมเซต:</b> ขึ้นรูปได้ครั้งเดียว โดนความร้อนจะไหม้เกรียม (เช่น Melamine, Bakelite)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Drill -->
+    <div id="tab-drill" class="tab-content">
+      <div class="quiz-card">
+        <div class="quiz-meta">
+          <span class="topic-indicator sci-indicator"><i class="fa-solid fa-bolt"></i> Chemistry Challenge</span>
+          <span class="generator-tag sci-gen-tag"><i class="fa-solid fa-infinity"></i> Infinite Generator (Queue)</span>
+        </div>
+
+        <div class="question-box">
+          <h3 class="question-title" id="sci-chem-q-text">กำลังโหลดโจทย์...</h3>
+          <div class="question-hint" id="sci-chem-q-hint">คำชี้แนะบริบทจะปรากฏตรงนี้</div>
+        </div>
+
+        <div class="options-grid" id="sci-chem-options-container"></div>
+
+        <div class="feedback-box hidden" id="sci-chem-feedback">
+          <div class="feedback-header" id="sci-chem-fb-title"></div>
+          <div class="feedback-text" id="sci-chem-fb-desc"></div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn-action sci-btn" id="sci-chem-next-btn" onclick="generateSciChemQuestion()">
+            ข้อถัดไป <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

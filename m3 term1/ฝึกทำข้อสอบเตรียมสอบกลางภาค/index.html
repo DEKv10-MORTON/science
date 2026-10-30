@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciMaster ม.3 เทอม 1 - คลังข้อสอบเตรียมสอบฉบับรวม</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-vial-circle-check"></i>
+        </div>
+        <div class="brand-text">
+          <h2>SciMaster ม.3 เทอม 1 By : DEK MORTON STUDIO</h2>
+          <p>คลังข้อสอบแนวใหม่ • รวม 3 หน่วย (พันธุศาสตร์ • คลื่นและแสง • ไฟฟ้า)</p>
+        </div>
+      </div>
+
+      <!-- ส่วนขวา: Stats bar และปุ่ม YouTube วูบวาบเชิญชวน -->
+      <div class="header-right-group">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-icon">⭐</span>
+            <div class="stat-info">
+              <span class="stat-label">Score</span>
+              <span class="stat-value" id="score-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🔥</span>
+            <div class="stat-info">
+              <span class="stat-label">Streak</span>
+              <span class="stat-value" id="streak-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🏆</span>
+            <div class="stat-info">
+              <span class="stat-label">Progress</span>
+              <span class="stat-value" id="progress-val">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Glow Button -->
+        <a href="https://www.youtube.com/watch?v=BP83gzbezNU" target="_blank" class="yt-pulse-btn"
+          title="คลิปติวเตอร์ YouTube เพิ่มเติม">
+          <i class="fa-brands fa-youtube"></i>
+          <span>ติวเตอร์</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <div class="main-wrapper">
+    <nav class="tabs-nav sci-tabs">
+      <button class="tab-btn active" onclick="switchTab('tab-theory', this)">
+        <i class="fa-solid fa-book-open"></i> 1. สรุปจุดเน้นข้อสอบ
+      </button>
+      <button class="tab-btn" onclick="switchTab('tab-drill', this)">
+        <i class="fa-solid fa-bolt"></i> 2. Exam Drill 75 ข้อ
+      </button>
+    </nav>
+
+    <!-- Tab 1: Theory Summary -->
+    <div id="tab-theory" class="tab-content active">
+      <div class="banner-card sci-banner">
+        <span class="badge-pill sci-badge">วิทยาศาสตร์ ม.3 เทอม 1</span>
+        <h1>สรุปแนวข้อสอบเตรียมสอบกลางภาค-ปลายภาค (Exam Review)</h1>
+        <p>เจาะลึก 3 หมวดวิชาหลัก: พันธุศาสตร์, คลื่นและแสง, ไฟฟ้าและอิเล็กทรอนิกส์
+          แม่นยำทุกสูตรคำนวณและสัญลักษณ์ทางวิทยาศาสตร์!</p>
+      </div>
+
+      <div class="theory-grid">
+        <!-- Genetics -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-dna text-science"></i> 1. พันธุศาสตร์</h3>
+            <span class="tag sci-tag">Genetics</span>
+          </div>
+          <p class="theory-desc">โครโมโซม ยีน การถ่ายทอดลักษณะตามกฎเมนเดล และโรคทางพันธุกรรม</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Points</div>
+            <div>• <b>โครโมโซม:</b> ร่างกายมี 46 แท่ง (23 คู่), เซลล์สืบพันธุ์มี 23 แท่ง (แบ่งแบบไมโอซิส)</div>
+            <div>• <b>คู่ยีน:</b> จีโนไทป์ (TT, Tt, tt) ควบคุมฟีโนไทป์ (ลักษณะภายนอก)</div>
+            <div>• <b>โรคพันธุกรรม:</b> ดาวน์ซินโดรม (คู่ที่ 21 เกิน 1 แท่ง), ตาบอดสี/ฮีโมฟีเลีย (ยีนด้อยบน X)</div>
+          </div>
+        </div>
+
+        <!-- Waves & Light -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-water text-science"></i> 2. คลื่นและแสง</h3>
+            <span class="tag sci-tag">Waves & Optics</span>
+          </div>
+          <p class="theory-desc">ส่วนประกอบคลื่น กฎการสะท้อน การหักเห และเลนส์ชนิดต่างๆ</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Points</div>
+            <div>• <b>สูตรคำนวณ:</b> <b>v = fλ</b> (อัตราเร็ว = ความถี่ × ความยาวคลื่น)</div>
+            <div>• <b>การสะท้อน:</b> มุมตกกระทบเท่ากับมุมสะท้อนเสมอ (<b>θ₁ = θ₂</b>)</div>
+            <div>• <b>เลนส์:</b> เลนส์นูนรวมแสง (แก้สายตายาว), เลนส์เว้ากระจายแสง (แก้สายตาสั้น)</div>
+          </div>
+        </div>
+
+        <!-- Electricity -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-bolt-lightning text-science"></i> 3. ไฟฟ้าและวงจร</h3>
+            <span class="tag sci-tag">Electricity</span>
+          </div>
+          <p class="theory-desc">กฎของโอห์ม การต่อวงจร กำลังไฟฟ้า และการคำนวณค่าไฟ</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Points</div>
+            <div>• <b>กฎของโอห์ม:</b> <b>V = IR</b>, กำลังไฟฟ้า <b>P = IV</b>, พลังงาน <b>E = P × t</b></div>
+            <div>• <b>การต่อวงจร:</b> อนุกรมกระแสเท่ากัน, ขนานแรงดันเท่ากัน (<b>R<sub>รวม</sub></b> ลดลง)</div>
+            <div>• <b>ความปลอดภัย:</b> ฟิวส์ตัดกระแสเกิน, สายดินป้องกันไฟรั่วไฟดูด</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Drill -->
+    <div id="tab-drill" class="tab-content">
+      <div class="quiz-card">
+        <div class="quiz-meta">
+          <span class="topic-indicator sci-indicator" id="exam-category-badge"><i class="fa-solid fa-layer-group"></i>
+            คลังข้อสอบ ม.3 เทอม 1</span>
+          <span class="generator-tag sci-gen-tag"><i class="fa-solid fa-infinity"></i> Infinite Generator (Queue)</span>
+        </div>
+
+        <div class="question-box">
+          <h3 class="question-title" id="exam-q-text">กำลังโหลดโจทย์...</h3>
+          <div class="question-hint" id="exam-q-hint">คำชี้แนะบริบทจะปรากฏตรงนี้</div>
+        </div>
+
+        <div class="options-grid" id="exam-options-container"></div>
+
+        <div class="feedback-box hidden" id="exam-feedback">
+          <div class="feedback-header" id="exam-fb-title"></div>
+          <div class="feedback-text" id="exam-fb-desc"></div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn-action sci-btn" id="exam-next-btn" onclick="generateExamQuestion()">
+            ข้อถัดไป <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

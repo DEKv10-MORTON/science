@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciMaster - สารละลาย ม.2 เทอม 1</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-flask-vial"></i>
+        </div>
+        <div class="brand-text">
+          <h2>SciMaster: สารละลาย ม.2 เทอม 1 By : DEK MORTON STUDIO</h2>
+          <p>คลังความรู้และข้อสอบ • หน่วยที่ 1 สารละลาย บทที่ 1</p>
+        </div>
+      </div>
+
+      <!-- ส่วนขวา: Stats bar และปุ่ม YouTube ติวเตอร์ -->
+      <div class="header-right-group">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-icon">⭐</span>
+            <div class="stat-info">
+              <span class="stat-label">Score</span>
+              <span class="stat-value" id="score-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🔥</span>
+            <div class="stat-info">
+              <span class="stat-label">Streak</span>
+              <span class="stat-value" id="streak-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🏆</span>
+            <div class="stat-info">
+              <span class="stat-label">Progress</span>
+              <span class="stat-value" id="progress-val">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Glow Button -->
+        <a href="https://www.youtube.com/watch?v=jp_Wi88cFC8" target="_blank" class="yt-pulse-btn"
+          title="คลิปติวเตอร์ YouTube เพิ่มเติม">
+          <i class="fa-brands fa-youtube"></i>
+          <span>ติวเตอร์</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <div class="main-wrapper">
+    <nav class="tabs-nav sci-tabs">
+      <button class="tab-btn active" onclick="switchTab('tab-theory', this)">
+        <i class="fa-solid fa-book-open"></i> 1. สรุปองค์ประกอบสารละลาย
+      </button>
+      <button class="tab-btn" onclick="switchTab('tab-drill', this)">
+        <i class="fa-solid fa-bolt"></i> 2. Solutions Drill
+      </button>
+    </nav>
+
+    <!-- Tab 1: Theory Summary -->
+    <div id="tab-theory" class="tab-content active">
+      <div class="banner-card sci-banner">
+        <span class="badge-pill sci-badge">Grade 8 Term 1: Unit 1 Solutions</span>
+        <h1>สรุปสาระสำคัญ องค์ประกอบสารละลายและสภาพละลายได้ (Solutions & Solubility)</h1>
+        <p>เจาะลึกตัวละลาย, ตัวทำละลาย, สารละลายอิ่มตัว, และปัจจัยที่มีผลต่อสภาพละลายได้ (อุณหภูมิและความดัน)!</p>
+      </div>
+
+      <div class="theory-grid">
+        <!-- Card 1 -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-flask text-science"></i> องค์ประกอบของสารละลาย</h3>
+            <span class="tag sci-tag">Solute & Solvent</span>
+          </div>
+          <p class="theory-desc">การจำแนกตัวละลายและตัวทำละลายในเนื้อสารเดียว</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Concepts</div>
+            <div>• <b>ตัวละลาย (Solute):</b> สารที่มีปริมาณน้อยกว่าและถูกกระจายตัวอยู่</div>
+            <div>• <b>ตัวทำละลาย (Solvent):</b> สารที่มีปริมาณมากกว่าและมีสถานะเดียวกับสารละลาย</div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-temperature-arrow-up text-science"></i> สภาพละลายได้และปัจจัย
+            </h3>
+            <span class="tag sci-tag">Solubility & Factors</span>
+          </div>
+          <p class="theory-desc">สารละลายอิ่มตัว อุณหภูมิ และความดันที่มีผลต่อการละลาย</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Points</div>
+            <div>• <b>สารละลายอิ่มตัว:</b> จุดที่ตัวละลายไม่สามารถละลายเพิ่มได้อีกที่อุณหภูมินั้น</div>
+            <div>• <b>อุณหภูมิ:</b> ของแข็งส่วนใหญ่ละลายได้ดีขึ้นเมื่ออุณหภูมิสูงขึ้น แต่แก๊สละลายได้น้อยลง</div>
+            <div>• <b>ความดัน:</b> มีผลอย่างมากต่อการละลายของแก๊สในของเหลว (ความดันสูง แก๊สละลายได้ดี)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Drill -->
+    <div id="tab-drill" class="tab-content">
+      <div class="quiz-card">
+        <div class="quiz-meta">
+          <span class="topic-indicator sci-indicator" id="sol-category-badge"><i class="fa-solid fa-layer-group"></i>
+            คลังข้อสอบสารละลาย</span>
+          <span class="generator-tag sci-gen-tag"><i class="fa-solid fa-infinity"></i> Infinite Random Queue</span>
+        </div>
+
+        <div class="question-box">
+          <h3 class="question-title" id="sol-q-text">กำลังโหลดโจทย์...</h3>
+          <div class="question-hint" id="sol-q-hint">คำชี้แนะบริบทจะปรากฏตรงนี้</div>
+        </div>
+
+        <div class="options-grid" id="sol-options-container"></div>
+
+        <div class="feedback-box hidden" id="sol-feedback">
+          <div class="feedback-header" id="sol-fb-title"></div>
+          <div class="feedback-text" id="sol-fb-desc"></div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn-action sci-btn hidden" id="sol-next-btn" onclick="generateSolQuestion()">
+            ข้อถัดไป <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

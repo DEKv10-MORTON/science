@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciMaster - แนวข้อสอบกลางภาค ม.2 เทอม 1</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-file-pen"></i>
+        </div>
+        <div class="brand-text">
+          <h2>SciMaster: แนวข้อสอบกลางภาค ม.2 เทอม 1 By : DEK MORTON STUDIO</h2>
+          <p>คลังข้อสอบจำลองสนามสอบกลางภาค • วิทยาศาสตร์ ม.2 เทอม 1</p>
+        </div>
+      </div>
+
+      <!-- ส่วนขวา: Stats bar และปุ่ม YouTube ติวเตอร์ -->
+      <div class="header-right-group">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-icon">⭐</span>
+            <div class="stat-info">
+              <span class="stat-label">Score</span>
+              <span class="stat-value" id="score-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🔥</span>
+            <div class="stat-info">
+              <span class="stat-label">Streak</span>
+              <span class="stat-value" id="streak-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🏆</span>
+            <div class="stat-info">
+              <span class="stat-label">Progress</span>
+              <span class="stat-value" id="progress-val">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Glow Button -->
+        <a href="https://www.youtube.com/watch?v=l1jeRpM_hYA" target="_blank" class="yt-pulse-btn"
+          title="คลิปติวเตอร์ YouTube เพิ่มเติม">
+          <i class="fa-brands fa-youtube"></i>
+          <span>ติวเตอร์</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <div class="main-wrapper">
+    <nav class="tabs-nav sci-tabs">
+      <button class="tab-btn active" id="btn-tab-theory" onclick="switchTab('tab-theory', this)">
+        <i class="fa-solid fa-book-open"></i> 1. สรุปทบทวนก่อนสอบกลางภาค
+      </button>
+      <button class="tab-btn" id="btn-tab-drill" onclick="switchTab('tab-drill', this)">
+        <i class="fa-solid fa-bolt"></i> 2. Midterm Exam Drill
+      </button>
+    </nav>
+
+    <!-- Tab 1: Theory Summary -->
+    <div id="tab-theory" class="tab-content active">
+      <div class="banner-card sci-banner">
+        <span class="badge-pill sci-badge">Grade 8 Term 1: Midterm Review</span>
+        <h1>สรุปทบทวนเนื้อหาเตรียมสอบกลางภาค ม.2 เทอม 1</h1>
+        <p>ประมวลสาระสำคัญจากเรื่องสารละลาย, ร่างกายมนุษย์ (ระบบหมุนเวียนเลือด หายใจ ขับถ่าย), และการเคลื่อนที่-แรง!</p>
+      </div>
+
+      <div class="theory-grid">
+        <!-- Card 1 -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-flask-vial text-science"></i> หน่วยที่ 1: สารละลาย</h3>
+            <span class="tag sci-tag">Solutions</span>
+          </div>
+          <p class="theory-desc">องค์ประกอบของสารละลาย สภาพละลายได้ และปัจจัยที่มีผล</p>
+          <div class="formula-box">
+            <div class="formula-title">Review Points</div>
+            <div>• ตัวละลาย (ปริมาณน้อย) และตัวทำละลาย (ปริมาณมาก)</div>
+            <div>• อุณหภูมิสูงขึ้น ของแข็งละลายได้ดีขึ้น แต่แก๊สละลายได้น้อยลง</div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-heart-pulse text-science"></i> หน่วยที่ 2 & 3: ร่างกาย &
+              การเคลื่อนที่</h3>
+            <span class="tag sci-tag">Body & Motion</span>
+          </div>
+          <p class="theory-desc">ระบบอวัยวะ และฟิสิกส์การเคลื่อนที่ แรงเสียดทาน โมเมนต์</p>
+          <div class="formula-box">
+            <div class="formula-title">Review Points</div>
+            <div>• หัวใจห้องล่างซ้ายส่งเลือดไปเลี้ยงทั่วร่างกาย</div>
+            <div>• ระยะทางเป็นสเกเลอร์ ส่วนการกระจัดเป็นเวกเตอร์</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Drill -->
+    <div id="tab-drill" class="tab-content">
+      <div class="quiz-card">
+        <div class="quiz-meta">
+          <span class="topic-indicator sci-indicator" id="midterm-category-badge"><i
+              class="fa-solid fa-layer-group"></i> คลังข้อสอบกลางภาค ม.2 เทอม 1</span>
+          <span class="generator-tag sci-gen-tag"><i class="fa-solid fa-infinity"></i> Infinite Random Queue</span>
+        </div>
+
+        <div class="question-box">
+          <h3 class="question-title" id="midterm-q-text">กำลังโหลดโจทย์...</h3>
+          <div class="question-hint" id="midterm-q-hint">คำชี้แนะบริบทจะปรากฏตรงนี้</div>
+        </div>
+
+        <div class="options-grid" id="midterm-options-container"></div>
+
+        <div class="feedback-box hidden" id="midterm-feedback">
+          <div class="feedback-header" id="midterm-fb-title"></div>
+          <div class="feedback-text" id="midterm-fb-desc"></div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn-action sci-btn hidden" id="midterm-next-btn" onclick="generateMidtermQuestion()">
+            ข้อถัดไป <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

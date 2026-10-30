@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciMaster ม.3 เทอม 2 - หน่วยที่ 6: ไฟฟ้า</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+        <div class="brand-text">
+          <h2>SciMaster ม.3 เทอม 2 By : DEK MORTON STUDIO</h2>
+          <p>หน่วยที่ 6 • ไฟฟ้า (วงจรไฟฟ้าและไฟฟ้าในชีวิตประจำวัน)</p>
+        </div>
+      </div>
+
+      <!-- ส่วนขวา: Stats bar และปุ่ม YouTube -->
+      <div class="header-right-group">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-icon">⭐</span>
+            <div class="stat-info">
+              <span class="stat-label">Score</span>
+              <span class="stat-value" id="score-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🔥</span>
+            <div class="stat-info">
+              <span class="stat-label">Streak</span>
+              <span class="stat-value" id="streak-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🏆</span>
+            <div class="stat-info">
+              <span class="stat-label">Progress</span>
+              <span class="stat-value" id="progress-val">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Glow Button -->
+        <a href="https://www.youtube.com/watch?v=My-ZF0bAHzI" target="_blank" class="yt-pulse-btn"
+          title="คลิปติวเตอร์ YouTube เพิ่มเติม">
+          <i class="fa-brands fa-youtube"></i>
+          <span>ติวเตอร์</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <div class="main-wrapper">
+    <nav class="tabs-nav sci-tabs">
+      <button class="tab-btn active" onclick="switchTab('tab-theory', this)">
+        <i class="fa-solid fa-book-open"></i> 1. ทฤษฎีและสูตรคำนวณไฟฟ้า
+      </button>
+      <button class="tab-btn" onclick="switchTab('tab-drill', this)">
+        <i class="fa-solid fa-bolt"></i> 2. Electricity Calculation Drill
+      </button>
+    </nav>
+
+    <!-- Tab 1: Theory -->
+    <div id="tab-theory" class="tab-content active">
+      <div class="banner-card sci-banner">
+        <span class="badge-pill sci-badge">วิทยาศาสตร์ ม.3 เทอม 2</span>
+        <h1>หน่วยที่ 6: ไฟฟ้า (Electricity Masterclass)</h1>
+        <p>เจาะลึกบทที่ 1 วงจรไฟฟ้าอย่างง่าย กฎของโอห์ม การต่อตัวต้านทาน และบทที่ 2 ไฟฟ้าในชีวิตประจำวัน
+          การคำนวณค่าไฟและเครื่องใช้ไฟฟ้า!</p>
+      </div>
+
+      <div class="theory-grid">
+        <!-- Chapter 1: Simple Circuits & Ohm's Law (ฝั่งซ้าย) -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-plug-circle-bolt text-science"></i> บทที่ 1: วงจรไฟฟ้าอย่างง่าย
+            </h3>
+            <span class="tag sci-tag">Ohm's Law & Circuits</span>
+          </div>
+          <p class="theory-desc">กระแสไฟฟ้า ความต่างศักย์ ความต้านทาน และการต่อตัวต้านทาน</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Formulas & Rules</div>
+            <div>• <b>กฎของโอห์ม:</b> <b>V = IR</b> (เมื่อ V = โวลต์, I = แอมแปร์, R = โอห์ม)</div>
+            <div>• <b>การต่ออนุกรม:</b> <b>I</b> เท่ากันทุกตัว, <b>R<sub>รวม</sub> = R<sub>1</sub> + R<sub>2</sub> +
+                ...</b></div>
+            <div>• <b>การต่อขนาน:</b> <b>V</b> เท่ากันทุกสาขา, ความต้านทานรวมลดลง</div>
+          </div>
+        </div>
+
+        <!-- Chapter 2: Electrical Power & Home Cost (ฝั่งขวา - เติมเนื้อหาให้ครบถ้วน) -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-calculator text-science"></i> บทที่ 2: ไฟฟ้าในชีวิตประจำวัน
+            </h3>
+            <span class="tag sci-tag">Power & Energy Cost</span>
+          </div>
+          <p class="theory-desc">กำลังไฟฟ้า การคำนวณยูนิตค่าไฟ และความปลอดภัยในการใช้งาน</p>
+          <div class="formula-box">
+            <div class="formula-title">Power & Home Cost Formulas</div>
+            <div>• <b>กำลังไฟฟ้า:</b> <b>P = IV</b> หรือ <b>P = I<sup>2</sup>R</b> มีหน่วยเป็นวัตต์ (W)</div>
+            <div>• <b>พลังงานไฟฟ้า:</b> <b>E = P × t</b> (เมื่อ P เป็นกิโลวัตต์ [kW] และ t เป็นชั่วโมง [h]
+              จะได้หน่วยเป็น kWh หรือหน่วยค่าไฟ)</div>
+            <div>• <b>ความปลอดภัย:</b> การเลือกขนาดฟิวส์ การติดตั้งสายดิน และการใช้เบรกเกอร์</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Drill (หน้าคำถามแบบฝึกหัด) -->
+    <div id="tab-drill" class="tab-content">
+      <div class="quiz-card">
+        <div class="quiz-meta">
+          <span class="topic-indicator sci-indicator"><i class="fa-solid fa-bolt"></i> Electricity Calculation
+            Challenge</span>
+          <span class="generator-tag sci-gen-tag"><i class="fa-solid fa-infinity"></i> Infinite Generator (Queue)</span>
+        </div>
+
+        <div class="question-box">
+          <h3 class="question-title" id="sci-elec2-q-text">กำลังโหลดโจทย์...</h3>
+          <div class="question-hint" id="sci-elec2-q-hint">คำชี้แนะบริบทจะปรากฏตรงนี้</div>
+        </div>
+
+        <div class="options-grid" id="sci-elec2-options-container"></div>
+
+        <div class="feedback-box hidden" id="sci-elec2-feedback">
+          <div class="feedback-header" id="sci-elec2-fb-title"></div>
+          <div class="feedback-text" id="sci-elec2-fb-desc"></div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn-action sci-btn" id="sci-elec2-next-btn" onclick="generateSciElec2Question()">
+            ข้อถัดไป <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

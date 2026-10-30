@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciMaster ม.3 เทอม 1 - Unit 1: พันธุศาสตร์</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-dna"></i>
+        </div>
+        <div class="brand-text">
+          <h2>SciMaster ม.3 เทอม 1 By : DEK MORTON STUDIO</h2>
+          <p>หน่วยที่ 1 • พันธุศาสตร์ (Genetics & Heredity)</p>
+        </div>
+      </div>
+
+      <!-- ส่วนขวา: Stats bar และปุ่ม YouTube วูบวาบเชิญชวน -->
+      <div class="header-right-group">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-icon">⭐</span>
+            <div class="stat-info">
+              <span class="stat-label">Score</span>
+              <span class="stat-value" id="score-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🔥</span>
+            <div class="stat-info">
+              <span class="stat-label">Streak</span>
+              <span class="stat-value" id="streak-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🏆</span>
+            <div class="stat-info">
+              <span class="stat-label">Progress</span>
+              <span class="stat-value" id="progress-val">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Glow Button -->
+        <a href="https://www.youtube.com/watch?v=pLxtzTZpW4s" target="_blank" class="yt-pulse-btn"
+          title="คลิปติวเตอร์ YouTube เพิ่มเติม">
+          <i class="fa-brands fa-youtube"></i>
+          <span>ติวเตอร์</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <div class="main-wrapper">
+    <nav class="tabs-nav sci-tabs">
+      <button class="tab-btn active" onclick="switchTab('tab-theory', this)">
+        <i class="fa-solid fa-book-open"></i> 1. ทฤษฎีพันธุศาสตร์
+      </button>
+      <button class="tab-btn" onclick="switchTab('tab-drill', this)">
+        <i class="fa-solid fa-bolt"></i> 2. Genetics Drill
+      </button>
+    </nav>
+
+    <!-- Tab 1: Theory -->
+    <div id="tab-theory" class="tab-content active">
+      <div class="banner-card sci-banner">
+        <span class="badge-pill sci-badge">วิทยาศาสตร์ ม.3 เทอม 1</span>
+        <h1>พันธุศาสตร์และการถ่ายทอดลักษณะทางพันธุกรรม (Genetics Masterclass)</h1>
+        <p>เรียนรู้เรื่องโครโมโซม DNA ยีน การแบ่งเซลล์แบบไมโทซิสและไมโอซิส กฎการถ่ายทอดลักษณะของเมนเดล โรคทางพันธุกรรม
+          และเทคโนโลยีดีเอ็นเอ!</p>
+      </div>
+
+      <div class="theory-grid">
+        <!-- Chromosomes & DNA -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-code text-science"></i> โครโมโซม DNA และยีน</h3>
+            <span class="tag sci-tag">DNA & Chromosomes</span>
+          </div>
+          <p class="theory-desc">สารพันธุกรรม หน่วยควบคุมลักษณะ และการแบ่งเซลล์สืบพันธุ์</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Concepts</div>
+            <div>• <b>โครโมโซม:</b> ประกอบด้วย DNA และโปรตีน มนุษย์มี 46 แท่ง (23 คู่) แบ่งเป็นออโตโซม 22 คู่
+              และโครโมโซมเพศ 1 คู่</div>
+            <div>• <b>ยีน (Gene):</b> หน่วยพันธุกรรมที่อยู่บน DNA ทําหน้าที่ควบคุมลักษณะต่างๆ ของสิ่งมีชีวิต</div>
+            <div>• <b>ไมโอซิส (Meiosis):</b> การแบ่งเซลล์เพื่อสร้างเซลล์สืบพันธุ์ ทำให้โครโมโซมลดลงเหลือครึ่งหนึ่ง (n)
+            </div>
+          </div>
+        </div>
+
+        <!-- Mendelian Genetics -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-seedling text-science"></i> การถ่ายทอดลักษณะทางพันธุกรรม</h3>
+            <span class="tag sci-tag">Mendelian Genetics</span>
+          </div>
+          <p class="theory-desc">พันธุศาสตร์ของเกรกอร์ เมนเดล จีโนไทป์ ฟีโนไทป์ และโรคทางพันธุกรรม</p>
+          <div class="formula-box">
+            <div class="formula-title">Genetics Rules</div>
+            <div>• <b>จีโนไทป์ (Genotype):</b>รูปแบบของยีน เช่น TT, Tt, tt</div>
+            <div>• <b>ฟีโนไทป์ (Phenotype):</b> ลักษณะที่แสดงออกภายนอก เช่น ต้นสูง, ต้นเตี้ย</div>
+            <div>• <b>โรคทางพันธุกรรม:</b> เช่น ตาบอดสี ฮีโมฟีเลีย ธาลัสซีเมีย และ Down syndrome (เกินที่คู่ที่ 21)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Drill -->
+    <div id="tab-drill" class="tab-content">
+      <div class="quiz-card">
+        <div class="quiz-meta">
+          <span class="topic-indicator sci-indicator"><i class="fa-solid fa-bolt"></i> Genetics Challenge</span>
+          <span class="generator-tag sci-gen-tag"><i class="fa-solid fa-infinity"></i> Infinite Generator (Queue)</span>
+        </div>
+
+        <div class="question-box">
+          <h3 class="question-title" id="sci-gen-q-text">กำลังโหลดโจทย์...</h3>
+          <div class="question-hint" id="sci-gen-q-hint">คำชี้แนะบริบทจะปรากฏตรงนี้</div>
+        </div>
+
+        <div class="options-grid" id="sci-gen-options-container"></div>
+
+        <div class="feedback-box hidden" id="sci-gen-feedback">
+          <div class="feedback-header" id="sci-gen-fb-title"></div>
+          <div class="feedback-text" id="sci-gen-fb-desc"></div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn-action sci-btn" id="sci-gen-next-btn" onclick="generateSciGenQuestion()">
+            ข้อถัดไป <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

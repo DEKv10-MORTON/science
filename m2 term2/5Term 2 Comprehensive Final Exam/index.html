@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciMaster ม.2 - Comprehensive Final Exam Drill (เทอม 2)</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="brand-text">
+          <h2>SciMaster ม.2 เทอม 2 By : DEK MORTON STUDIO</h2>
+          <p>แนวข้อสอบรวมปลายภาค • วิทยาศาสตร์ ม.2 เทอม 2</p>
+        </div>
+      </div>
+
+      <!-- ส่วนขวา: Stats bar และปุ่ม YouTube วูบวาบเชิญชวน -->
+      <div class="header-right-group">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-icon">⭐</span>
+            <div class="stat-info">
+              <span class="stat-label">Score</span>
+              <span class="stat-value" id="score-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🔥</span>
+            <div class="stat-info">
+              <span class="stat-label">Streak</span>
+              <span class="stat-value" id="streak-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🏆</span>
+            <div class="stat-info">
+              <span class="stat-label">Progress</span>
+              <span class="stat-value" id="progress-val">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Glow Button -->
+        <a href="https://www.youtube.com/watch?v=BPL1L-4jCZc&t=6s" target="_blank" class="yt-pulse-btn"
+          title="คลิปติวเตอร์ YouTube เพิ่มเติม">
+          <i class="fa-brands fa-youtube"></i>
+          <span>ติวเตอร์</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <div class="main-wrapper">
+    <nav class="tabs-nav sci-tabs">
+      <button class="tab-btn active" onclick="switchTab('tab-summary', this)">
+        <i class="fa-solid fa-list-check"></i> 1. สรุปขอบเขตข้อสอบ ม.2 เทอม 2
+      </button>
+      <button class="tab-btn" onclick="switchTab('tab-final', this)">
+        <i class="fa-solid fa-fire"></i> 2. ข้อสอบรวมปลายภาค เทอม 2
+      </button>
+    </nav>
+
+    <!-- Tab 1: Final Exam Scope Summary -->
+    <div id="tab-summary" class="tab-content active">
+      <div class="banner-card sci-banner">
+        <span class="badge-pill sci-badge">Science M.2 Term 2 Final Review</span>
+        <h1>ขอบเขตแนวข้อสอบรวมปลายภาคเรียนที่ 2</h1>
+        <p>ทบทวนความรู้วิชาวิทยาศาสตร์ระดับ ม.2 เทอม 2 ทุกหน่วยการเรียนรู้ เตรียมความพร้อมคว้าเกรด 4 แบบมั่นใจเต็มร้อย!
+        </p>
+      </div>
+
+      <div class="theory-grid">
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-bookmark text-science"></i> 4 หมวดเนื้อหาหลักที่ออกสอบ</h3>
+            <span class="tag sci-tag">Full Term 2 Coverage</span>
+          </div>
+          <div class="formula-box" style="line-height: 1.8;">
+            <div>1. <b>งานและพลังงาน:</b> เครื่องกลอย่างง่าย, E<sub>p</sub>, E<sub>k</sub> และกฎการอนุรักษ์พลังงาน</div>
+            <div>2. <b>การแยกสาร:</b> ระเหยแห้ง, ตกผลึก, กลั่น, โครมาทอกราฟี และการสกัด</div>
+            <div>3. <b>โลกและการเปลี่ยนแปลง:</b> โครงสร้างภายในโลก (แก่น, เนื้อ, เปลือก), ดิน และน้ำ</div>
+            <div>4. <b>ทรัพยากรพลังงานและภัยธรรมชาติ:</b> แหล่งพลังงาน, แผ่นดินไหว, สึนามิ และอุทกภัย</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Final Exam Drill -->
+    <div id="tab-final" class="tab-content">
+      <div class="quiz-card">
+        <div class="quiz-meta">
+          <span class="topic-indicator sci-indicator" id="exam-topic-badge"><i class="fa-solid fa-cubes"></i> Loading
+            Topic...</span>
+          <span class="generator-tag sci-gen-tag"><i class="fa-solid fa-infinity"></i> Infinite Generator (Queue)</span>
+        </div>
+
+        <div class="question-box">
+          <h3 class="question-title" id="final-q-text">กำลังโหลดข้อสอบปลายภาค วิทยาศาสตร์ ม.2 เทอม 2...</h3>
+          <div class="question-hint" id="final-q-hint">คำชี้แนะบริบทจะปรากฏตรงนี้</div>
+        </div>
+
+        <div class="options-grid" id="final-options-container"></div>
+
+        <div class="feedback-box hidden" id="final-feedback">
+          <div class="feedback-header" id="final-fb-title"></div>
+          <div class="feedback-text" id="final-fb-desc"></div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn-action sci-btn" id="final-next-btn" onclick="generateSciT2FinalQuestion()">
+            ข้อถัดไป <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

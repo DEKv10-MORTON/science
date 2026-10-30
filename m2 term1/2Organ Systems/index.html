@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciMaster - ร่างกายมนุษย์ ม.2 เทอม 1</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+        <div class="brand-text">
+          <h2>SciMaster: ร่างกายมนุษย์ By : DEK MORTON STUDIO</h2>
+          <p>คลังความรู้และข้อสอบ • หน่วยที่ 2 ร่างกายมนุษย์ บทที่ 1</p>
+        </div>
+      </div>
+
+      <!-- ส่วนขวา: Stats bar และปุ่ม YouTube ติวเตอร์ -->
+      <div class="header-right-group">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-icon">⭐</span>
+            <div class="stat-info">
+              <span class="stat-label">Score</span>
+              <span class="stat-value" id="score-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🔥</span>
+            <div class="stat-info">
+              <span class="stat-label">Streak</span>
+              <span class="stat-value" id="streak-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🏆</span>
+            <div class="stat-info">
+              <span class="stat-label">Progress</span>
+              <span class="stat-value" id="progress-val">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Glow Button -->
+        <a href="https://www.youtube.com/watch?v=wJZ-8bkhBM4" target="_blank" class="yt-pulse-btn" title="คลิปติวเตอร์ YouTube เพิ่มเติม">
+          <i class="fa-brands fa-youtube"></i>
+          <span>ติวเตอร์</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <div class="main-wrapper">
+    <nav class="tabs-nav sci-tabs">
+      <button class="tab-btn active" onclick="switchTab('tab-theory', this)">
+        <i class="fa-solid fa-book-open"></i> 1. สรุประบบอวัยวะร่างกาย
+      </button>
+      <button class="tab-btn" onclick="switchTab('tab-drill', this)">
+        <i class="fa-solid fa-bolt"></i> 2. Human Body Drill
+      </button>
+    </nav>
+
+    <!-- Tab 1: Theory Summary -->
+    <div id="tab-theory" class="tab-content active">
+      <div class="banner-card sci-banner">
+        <span class="badge-pill sci-badge">Grade 8 Term 1: Unit 2 Human Body</span>
+        <h1>สรุปสาระสำคัญ ระบบอวัยวะในร่างกายของเรา (Organ Systems in Human Body)</h1>
+        <p>เจาะลึกระบบหมุนเวียนเลือด, ระบบหายใจ, ระบบขับถ่าย, ระบบประสาท, และระบบสืบพันธุ์!</p>
+      </div>
+
+      <div class="theory-grid">
+        <!-- Card 1 -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-lungs text-science"></i> หมุนเวียนเลือด หายใจ ขับถ่าย</h3>
+            <span class="tag sci-tag">Circulation & Excretion</span>
+          </div>
+          <p class="theory-desc">กลไกการขนส่งสาร แลกเปลี่ยนแก๊ส และกำจัดของเสีย</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Concepts</div>
+            <div>• <b>หมุนเวียนเลือด:</b> หัวใจห้องล่างซ้าย (Left Ventricle) ฉีดเลือดที่มี O2 สูงไปเลี้ยงทั่วร่างกาย</div>
+            <div>• <b>หายใจเข้า:</b> กระบังลมลดต่ำลง ซี่โครงยกสูงขึ้น ปริมาตรช่องอกเพิ่ม ความดันลดลง</div>
+            <div>• <b>ระบบขับถ่าย:</b> ไตกรองของเสียผ่านหน่วยไต (Nephron) ขับออกมาในรูปปัสสาวะ</div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-brain text-science"></i> ประสาท สืบพันธุ์ และการทำงานร่วมกัน</h3>
+            <span class="tag sci-tag">Nervous & Reproductive</span>
+          </div>
+          <p class="theory-desc">การตอบสนองต่อสิ่งเร้า ฮอร์โมนเพศ และการประสานงานของระบบ</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Points</div>
+            <div>• <b>ระบบประสาท:</b> สมองส่วนเซรีบรัม (Cerebrum) ควบคุมความจำ การเรียนรู้ และการความคิด</div>
+            <div>• <b>ระบบสืบพันธุ์:</b> เทสโทสเตอโรน (ผู้ชาย), เอสโตรเจนและโพรเจสเทอโรน (ผู้หญิง)</div>
+            <div>• <b>การคุมกำเนิด:</b> แบบถาวร (ทำหมันชาย-หญิง), แบบชั่วคราว (ถุงยางอนามัย, ยาคุม)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Drill -->
+    <div id="tab-drill" class="tab-content">
+      <div class="quiz-card">
+        <div class="quiz-meta">
+          <span class="topic-indicator sci-indicator" id="body-category-badge"><i class="fa-solid fa-layer-group"></i> คลังข้อสอบระบบร่างกายมนุษย์</span>
+          <span class="generator-tag sci-gen-tag"><i class="fa-solid fa-infinity"></i> Infinite Random Queue</span>
+        </div>
+
+        <div class="question-box">
+          <h3 class="question-title" id="body-q-text">กำลังโหลดโจทย์...</h3>
+          <div class="question-hint" id="body-q-hint">คำชี้แนะบริบทจะปรากฏตรงนี้</div>
+        </div>
+
+        <div class="options-grid" id="body-options-container"></div>
+
+        <div class="feedback-box hidden" id="body-feedback">
+          <div class="feedback-header" id="body-fb-title"></div>
+          <div class="feedback-text" id="body-fb-desc"></div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn-action sci-btn hidden" id="body-next-btn" onclick="generateBodyQuestion()">
+            ข้อถัดไป <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

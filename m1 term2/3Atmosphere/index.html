@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciMaster - ลมฟ้าอากาศรอบตัว ม.1 เทอม 2</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-cloud-sun"></i>
+        </div>
+        <div class="brand-text">
+          <h2>SciMaster: ลมฟ้าอากาศรอบตัว By : DEK MORTON STUDIO</h2>
+          <p>คลังความรู้และข้อสอบ • หน่วยที่ 6 กระบวนการเปลี่ยนแปลงลมฟ้าอากาศ</p>
+        </div>
+      </div>
+
+      <!-- ส่วนขวา: Stats bar และปุ่ม YouTube ติวเตอร์ -->
+      <div class="header-right-group">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-icon">⭐</span>
+            <div class="stat-info">
+              <span class="stat-label">Score</span>
+              <span class="stat-value" id="score-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🔥</span>
+            <div class="stat-info">
+              <span class="stat-label">Streak</span>
+              <span class="stat-value" id="streak-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🏆</span>
+            <div class="stat-info">
+              <span class="stat-label">Progress</span>
+              <span class="stat-value" id="progress-val">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Glow Button -->
+        <a href="https://www.youtube.com/watch?v=8JdHlQ47Glo" target="_blank" class="yt-pulse-btn"
+          title="คลิปติวเตอร์ YouTube เพิ่มเติม">
+          <i class="fa-brands fa-youtube"></i>
+          <span>ติวเตอร์</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <div class="main-wrapper">
+    <nav class="tabs-nav sci-tabs">
+      <button class="tab-btn active" onclick="switchTab('tab-theory', this)">
+        <i class="fa-solid fa-book-open"></i> 1. สรุปฟ้าอากาศรอบตัว
+      </button>
+      <button class="tab-btn" onclick="switchTab('tab-drill', this)">
+        <i class="fa-solid fa-bolt"></i> 2. Weather Drill
+      </button>
+    </nav>
+
+    <!-- Tab 1: Theory Summary -->
+    <div id="tab-theory" class="tab-content active">
+      <div class="banner-card sci-banner">
+        <span class="badge-pill sci-badge">Unit 6 Chapter 1: Weather Around Us</span>
+        <h1>สรุปสาระสำคัญ ลมฟ้าอากาศรอบตัว (Atmosphere, Wind & Clouds)</h1>
+        <p>เจาะลึกชั้นบรรยากาศของโลก, ความชื้นและความกดอากาศ, การเกิดลม, และเมฆกับการเกิดฝน[cite: 13]!</p>
+      </div>
+
+      <div class="theory-grid">
+        <!-- Card 1 -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-layer-group text-science"></i> ชั้นบรรยากาศและความกดอากาศ</h3>
+            <span class="tag sci-tag">Atmosphere Layers</span>
+          </div>
+          <p class="theory-desc">โครงสร้างชั้นบรรยากาศ อุณหภูมิ และความชื้น[cite: 13]</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Concepts</div>
+            <div>• <b>โทรโปสเฟียร์ (Troposphere):</b> ชั้นล่างสุด เกิดปรากฏการณ์ลมฟ้าอากาศ เมฆ ฝน</div>
+            <div>• <b>สตราโตสเฟียร์ (Stratosphere):</b> ชั้นที่มีแก๊สโอโซนช่วยกรองรังสี UV เหมาะแก่การบิน</div>
+            <div>• <b>ความกดอากาศ:</b> อากาศร้อนลอยตัวสูงขึ้นทำให้เกิดความกดอากาศต่ำ</div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-wind text-science"></i> ลม เมฆ และการเกิดฝน</h3>
+            <span class="tag sci-tag">Wind & Rain</span>
+          </div>
+          <p class="theory-desc">กลไกการเกิดลม ทิศทางลม และการกลั่นตัวเป็นหยาดน้ำฟ้า[cite: 13]</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Points</div>
+            <div>• <b>การเกิดลม:</b> อากาศเคลื่อนที่จากบริเวณความกดอากาศสูงไปสู่ความกดอากาศต่ำ[cite: 13]</div>
+            <div>• <b>เมฆและฝน:</b> ละอองน้ำในอากาศรวมตัวกันกลายเป็นเมฆและตกลงมาเป็นฝนเมื่อหยดน้ำมีขนาดใหญ่ขึ้น</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Drill -->
+    <div id="tab-drill" class="tab-content">
+      <div class="quiz-card">
+        <div class="quiz-meta">
+          <span class="topic-indicator sci-indicator" id="weather-category-badge"><i
+              class="fa-solid fa-layer-group"></i> คลังข้อสอบลมฟ้าอากาศรอบตัว</span>
+          <span class="generator-tag sci-gen-tag"><i class="fa-solid fa-infinity"></i> Infinite Random Queue</span>
+        </div>
+
+        <div class="question-box">
+          <h3 class="question-title" id="weather-q-text">กำลังโหลดโจทย์...</h3>
+          <div class="question-hint" id="weather-q-hint">คำชี้แนะบริบทจะปรากฏตรงนี้</div>
+        </div>
+
+        <div class="options-grid" id="weather-options-container"></div>
+
+        <div class="feedback-box hidden" id="weather-feedback">
+          <div class="feedback-header" id="weather-fb-title"></div>
+          <div class="feedback-text" id="weather-fb-desc"></div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn-action sci-btn hidden" id="weather-next-btn" onclick="generateWeatherQuestion()">
+            ข้อถัดไป <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

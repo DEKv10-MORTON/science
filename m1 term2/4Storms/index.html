@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciMaster - มนุษย์และการเปลี่ยนแปลงลมฟ้าอากาศ ม.1 เทอม 2</title>
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Header -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="brand-text">
+          <h2>SciMaster: มนุษย์กับลมฟ้าอากาศ By : DEK MORTON STUDIO</h2>
+          <p>คลังความรู้และข้อสอบ • หน่วยที่ 6 บทที่ 2 มนุษย์และการเปลี่ยนแปลงลมฟ้าอากาศ</p>
+        </div>
+      </div>
+
+      <!-- ส่วนขวา: Stats bar และปุ่ม YouTube ติวเตอร์ -->
+      <div class="header-right-group">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-icon">⭐</span>
+            <div class="stat-info">
+              <span class="stat-label">Score</span>
+              <span class="stat-value" id="score-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🔥</span>
+            <div class="stat-info">
+              <span class="stat-label">Streak</span>
+              <span class="stat-value" id="streak-val">0</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="stat-item">
+            <span class="stat-icon">🏆</span>
+            <div class="stat-info">
+              <span class="stat-label">Progress</span>
+              <span class="stat-value" id="progress-val">0%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Glow Button -->
+        <a href="https://www.youtube.com/watch?v=aSfrQTT_OE8" target="_blank" class="yt-pulse-btn"
+          title="คลิปติวเตอร์ YouTube เพิ่มเติม">
+          <i class="fa-brands fa-youtube"></i>
+          <span>ติวเตอร์</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <div class="main-wrapper">
+    <nav class="tabs-nav sci-tabs">
+      <button class="tab-btn active" onclick="switchTab('tab-theory', this)">
+        <i class="fa-solid fa-book-open"></i> 1. สรุปมนุษย์กับลมฟ้าอากาศ
+      </button>
+      <button class="tab-btn" onclick="switchTab('tab-drill', this)">
+        <i class="fa-solid fa-bolt"></i> 2. Climate Change Drill
+      </button>
+    </nav>
+
+    <!-- Tab 1: Theory Summary -->
+    <div id="tab-theory" class="tab-content active">
+      <div class="banner-card sci-banner">
+        <span class="badge-pill sci-badge">Unit 6 Chapter 2: Climate & Humans</span>
+        <h1>สรุปสาระสำคัญ บทที่ 2 มนุษย์และการเปลี่ยนแปลงลมฟ้าอากาศ (Storms, El Nino & Greenhouse)</h1>
+        <p>เจาะลึกพายุหมุนเขตร้อนและมรสุม, ปรากฏการณ์เอลนีโ뇨-ลานีญา, และภาวะเรือนกระจก[cite: 13]!</p>
+      </div>
+
+      <div class="theory-grid">
+        <!-- Card 1 -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-hurricane text-science"></i> พายุหมุนเขตร้อนและมรสุม</h3>
+            <span class="tag sci-tag">Storms & Monsoons</span>
+          </div>
+          <p class="theory-desc">ลักษณะการเกิดพายุและมรสุมที่ส่งผลต่อประเทศไทย[cite: 13]</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Concepts</div>
+            <div>• <b>พายุหมุนเขตร้อน:</b> แบ่งตามความเร็วลมได้แก่ ดีเปรสชัน, พายุโซนร้อน, และไต้ฝุ่น</div>
+            <div>• <b>มรสุมตะวันออกเฉียงเหนือ:</b> พัดพาความหนาวเย็นและความแห้งแล้งมาสู่ไทย (ฤดูหนาว)</div>
+            <div>• <b>มรสุมตะวันตกเฉียงใต้:</b> พัดพาความชื้นจากทะเลมาสู่ไทย ทำให้เกิดฝนตกชุก (ฤดูฝน)</div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="theory-card">
+          <div class="card-header-tag">
+            <h3 class="card-title"><i class="fa-solid fa-earth-americas text-science"></i> เอลนีโ뇨 ลานีญา และเรือนกระจก
+            </h3>
+            <span class="tag sci-tag">El Nino & Greenhouse</span>
+          </div>
+          <p class="theory-desc">ปรากฏการณ์ความผิดปกติของสภาพอากาศและภาวะโลกร้อน[cite: 13]</p>
+          <div class="formula-box">
+            <div class="formula-title">Key Points</div>
+            <div>• <b>เอลนีโ뇨 (El Nino):</b> น้ำทะเลอุ่นทางแปซิฟิกตะวันออก ทำให้เกิดความแห้งแล้งรุนแรงในไทย</div>
+            <div>• <b>ลานีญา (La Nina):</b> น้ำทะเลเย็นจัดทางแปซิฟิกตะวันออก ทำให้ไทยมีฝนตกชุกและน้ำท่วมขัง</div>
+            <div>• <b>ปรากฏการณ์เรือนกระจก:</b> แก๊สเรือนกระจกกักเก็บความร้อนไว้ทำให้โลกอุ่นขึ้น</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Drill -->
+    <div id="tab-drill" class="tab-content">
+      <div class="quiz-card">
+        <div class="quiz-meta">
+          <span class="topic-indicator sci-indicator" id="climate-category-badge"><i
+              class="fa-solid fa-layer-group"></i> คลังข้อสอบมนุษย์กับลมฟ้าอากาศ</span>
+          <span class="generator-tag sci-gen-tag"><i class="fa-solid fa-infinity"></i> Infinite Random Queue</span>
+        </div>
+
+        <div class="question-box">
+          <h3 class="question-title" id="climate-q-text">กำลังโหลดโจทย์...</h3>
+          <div class="question-hint" id="climate-q-hint">คำชี้แนะบริบทจะปรากฏตรงนี้</div>
+        </div>
+
+        <div class="options-grid" id="climate-options-container"></div>
+
+        <div class="feedback-box hidden" id="climate-feedback">
+          <div class="feedback-header" id="climate-fb-title"></div>
+          <div class="feedback-text" id="climate-fb-desc"></div>
+        </div>
+
+        <div class="action-row">
+          <button class="btn-action sci-btn hidden" id="climate-next-btn" onclick="generateClimateQuestion()">
+            ข้อถัดไป <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
